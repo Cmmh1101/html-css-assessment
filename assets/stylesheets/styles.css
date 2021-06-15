@@ -46,6 +46,7 @@ select {
   margin-bottom: 10px;
   border: 1px solid #d0d0d0;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 select option {
@@ -66,7 +67,11 @@ select option {
   width: 100%;
   border-radius: 30px;
   padding: 17px 0;
-  /* margin-left: 5px; */
+  transition: scale 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+  transform: scale(0.98);
 }
 
 /* Skills */
@@ -90,11 +95,6 @@ select option {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   margin-bottom: 20px;
-  transition: scale 0.3s ease-in-out;
-}
-
-.box:hover {
-  transform: scale(1.02);
 }
 
 .box img {
